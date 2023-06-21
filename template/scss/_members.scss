@@ -1,0 +1,86 @@
+$memberImgHeightInMobile: 4em;
+
+section.members {
+    padding-top: 3em;
+    padding-bottom: 2.5em;
+    text-align: left;
+    background-color: rgba(56, 64, 75, 0.4);
+
+    .heading {
+        text-align: left;
+    }
+
+    .member-column {
+        max-width: 46%;
+    }
+
+    .github-member {
+        padding: 0;
+        margin: 0;
+        margin-left: -0.75em;
+        margin-right: -0.75em;
+        transition: transform 250ms ease-in-out;
+
+        @media screen and (max-width: 992px) {
+            margin-left: unset;
+            margin-right: unset;
+        }
+
+        &:hover {
+            transform: translateY(-0.5em);
+            z-index: 10;
+        }
+
+        a:hover {
+            text-decoration: unset;
+        }
+
+        img {
+            border-top-left-radius: var(--border-radius);
+            border-top-right-radius: var(--border-radius);
+            border-bottom-left-radius: unset;
+            border-bottom-right-radius: unset;
+            aspect-ratio: 1 / 1;
+            width: 100%;
+            height: auto;
+        }
+
+        p {
+            text-align: center;
+            padding: 0.25em;
+            margin: 0;
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        .github-member {
+            a {
+                display: flex;
+                flex-direction: row;
+            }
+
+            img {
+                border-top-left-radius: var(--border-radius);
+                border-top-right-radius: unset;
+                border-bottom-left-radius: var(--border-radius);
+                border-bottom-right-radius: unset;
+                aspect-ratio: 1 / 1;
+                height: $memberImgHeightInMobile;
+                width: auto;
+            }
+
+            .name {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 0.5em;
+                width: 100%;
+
+                p {
+                    text-align: left;
+                    max-width: calc(100% - 0.5em);
+                }
+            }
+        }
+    }
+}

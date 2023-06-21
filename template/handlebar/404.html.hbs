@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+{{> components/documentHead documentTitle="Not Found"}}
+
+<body id="app-body">
+    <div class="page-wrapper">
+
+        {{> components/header showHome="true" showDownloadButton="true"}}
+
+        <section class="section not-found">
+            <div class="container-1180px">
+                <h2 class="ta-center noselect">Not Found</h2>
+                <div class="container-600px ta-center noselect">
+                    <h3 style="font-weight: 100;">
+                        The page you are looking for could not be found. Click <a href="/" title="home">here</a> to go
+                        to the home
+                        page.
+                    </h3>
+
+                    <img src="/assets/img/404.gif" alt="404 Not found" draggable="false" />
+                </div>
+            </div>
+        </section>
+
+        {{> components/footer}}
+
+    </div>
+</body>
+
+{{> components/scripts}}
+
+</html>

@@ -1,0 +1,11 @@
+/* TEAM */
+Software Engineer: 
+Contact: hi [at] kurtlourens.com
+Twitter: 
+From: 
+
+/* SITE */
+Last update: 2023-06-21
+Language: English
+Doctype:HTML5
+IDE: Visual Studio Code

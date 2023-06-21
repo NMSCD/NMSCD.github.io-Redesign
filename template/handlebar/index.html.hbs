@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+{{> components/documentHead preloadMainImgs="true" schemaOrg="true"}}
+
+<body id="app-body" class="is-loading">
+
+    {{> components/header }}
+
+    <div class="page-wrapper">
+
+        <section class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 ta-center">
+                        <img src="./assets/img/launch.svg" alt="astronaut in space" draggable="false" />
+                    </div>
+                    <div class="col-9">
+                        <h1>Welcome to the <span class="primary">NMSCD</span></h1>
+                        <i>No Man's Sky Community Developers &amp; Designers</i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="who-are-we">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9">
+                        <div class="heading">
+                            <h2>About us</h2>
+                        </div>
+                        <span>{{meta.description}}</span><br />
+                        <a href="https://github.com/NMSCD/About#how-to-join" role="button" class="outline cta"
+                            target="_blank" rel="noopener noreferrer">Join our community!</a>
+                    </div>
+                    <div class="col-3 ta-center noselect">
+                        <img src="./assets/img/glitches.png" alt="many items" draggable="false" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="heading">
+                            <h2>Projects</h2>
+                        </div>
+                        <span>Supported by the NMSCD</span><br />
+                        <div class="list">
+                            {{#each projects}}
+                            {{> components/project }}
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="members">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="heading">
+                            <h2>Our Members</h2>
+                        </div>
+                    </div>
+                    {{#each members}}
+                    {{> components/member }}
+                    {{/each}}
+                </div>
+            </div>
+        </section>
+
+        {{> components/footer}}
+
+    </div>
+</body>
+
+{{> components/scripts parallax="true" testimonials="true"}}
+
+</html>

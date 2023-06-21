@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "NMSFuturaProBook";
+    src: url("https://font.nmscd.com/assets/font/NMSFuturaProBook_Kerned/Web-TT/NMSFuturaProBook_Kerned.eot");
+    src: url("https://font.nmscd.com/assets/font/NMSFuturaProBook_Kerned/Web-TT/NMSFuturaProBook_Kerned.eot?#iefix")
+            format("embedded-opentype"),
+        url("https://font.nmscd.com/assets/font/NMSFuturaProBook_Kerned/Web-TT/NMSFuturaProBook_Kerned.woff")
+            format("woff"),
+        url("https://font.nmscd.com/assets/font/NMSFuturaProBook_Kerned/Web-TT/NMSFuturaProBook_Kerned.ttf")
+            format("truetype");
+}
+
+/* Make everything use the NMSFuturaProBook font */
+* {
+    font-family: "NMSFuturaProBook";
+}
+
+@import "var";
+@import "page";
+@import "navbar";
+@import "banner";
+@import "members";
+@import "projects";
+@import "scrollbar";
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --nav-background-color: rgba(56, 64, 75, 0.8);
+    --nav-border-color: rgba(165, 190, 200, 0.2);
+}
+
+#app-body {
+    // Pico css vars
+    --primary: #{$primaryColour};
+    --primary-hover: #{lighten($primaryColour, 10%)};
+    --primary-focus: rgba(229, 30, 30, 0.25);
+    --primary-inverse: #fff;
+
+    --font-family: "NMSFuturaProBook";
+}
+
+body {
+    color: #fff;
+    background-color: $bodyColour;
+}
+
+.mt-8 {
+    margin-top: 8em;
+}
+
+.max-1-line {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.primary {
+    color: $primaryColour;
+}
+
+.noselect,
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.hidden-in-desktop {
+    @media screen and (min-width: 1000px) {
+        display: none;
+    }
+}
+
+.hidden-in-mobile {
+    @media screen and (max-width: 1000px) {
+        display: none !important;
+    }
+}
+
+.hidden {
+    display: none !important;
+}

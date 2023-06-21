@@ -1,0 +1,79 @@
+.page-wrapper {
+    margin-top: 4em;
+}
+
+section,
+footer {
+    .heading {
+        text-align: center;
+
+        h2 {
+            display: inline-block;
+            border-bottom: 1px whitesmoke solid;
+            margin-bottom: 1em;
+        }
+    }
+}
+
+section {
+    a[role="button"] {
+        margin-top: 0.75em;
+        padding: 0.5em 0.75em;
+
+        &:hover {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            color: $bodyColour;
+        }
+
+        &.cta {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+section.who-are-we {
+    padding-top: 3em;
+    padding-bottom: 2.5em;
+    text-align: left;
+    margin-bottom: 0;
+    background-color: rgba(56, 64, 75, 0.4);
+
+    .heading {
+        text-align: left;
+    }
+
+    img {
+        transition: filter 250ms ease-in-out;
+        will-change: filter;
+
+        &:hover {
+            filter: drop-shadow(0 0 0.5rem whitesmoke);
+        }
+    }
+}
+
+footer {
+    background-color: #1e2a33;
+
+    .heading {
+        text-align: left;
+    }
+
+    .copyright {
+        margin-top: 3em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    section,
+    footer {
+        text-align: center !important;
+
+        .heading,
+        .heading + span {
+            text-align: center !important;
+        }
+    }
+}

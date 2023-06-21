@@ -1,0 +1,43 @@
+{
+"name": "No Man's Sky Community Developers & Designers",
+"short_name": "",
+"description": "A lot of the tools that exist for No Man&#x27;s Sky are isolated. The creators have done amazing jobs working on their projects. But we could do so much more together!",
+"lang": "en-US",
+"scope": "/",
+"start_url": "/?standalone",
+"display": "standalone",
+"icons": [
+
+{
+"src": "assets/favicon/android-icon-256x256.png",
+"sizes": "256x256",
+"type": "image/png"
+}
+,
+{
+"src": "assets/favicon/android-icon-192x192.png",
+"sizes": "192x192",
+"type": "image/png"
+}
+,
+{
+"src": "assets/favicon/apple-icon-144x144.png",
+"sizes": "144x144",
+"type": "image/png"
+}
+,
+{
+"src": "assets/favicon/favicon-96x96.png",
+"sizes": "96x96",
+"type": "image/png"
+}
+,
+{
+"src": "assets/favicon/apple-icon-76x76.png",
+"sizes": "76x76",
+"type": "image/png"
+}
+],
+"background_color": "#1b1f22",
+"theme_color": "#7986cb"
+}

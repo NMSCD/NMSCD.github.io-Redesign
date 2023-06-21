@@ -1,0 +1,96 @@
+{
+    "rootUrl": "https://nmscd.com/",
+    "theme": {
+        "colour": "#7986cb",
+        "maskColour": "#7986cb",
+        "appleStatusBar": "#7986cb"
+    },
+    "meta": {
+        "title": "NMSCD - No Man's Sky Community Developers & Designers",
+        "appName": "No Man's Sky Community Developers & Designers",
+        "description": "A lot of the tools that exist for No Man's Sky are isolated. The creators have done amazing jobs working on their projects. But we could do so much more together!",
+        "mailto": "mailto:support@nmsassistant.com",
+        "privacyPolicy": "/privacy_policy.html",
+        "termsAndConditions": "/terms_and_conditions.html"
+    },
+    "preconnectLinks": [
+        "https://fonts.nmscd.com",
+        "https://cdnjs.cloudflare.com"
+    ],
+    "twitter": {
+        "handle": "@AssistantNMS",
+        "imageAlt": "Twitter card image",
+        "metaImageSize": "summary_large_image"
+    },
+    "assistantNms": {
+        "web": "https://nmsassistant.com",
+        "webApp": "https://app.nmsassistant.com",
+        "webApi": "https://api.nmsassistant.com",
+        "githubOrg": "https://github.com/AssistantNMS",
+        "githubApp": "https://github.com/AssistantNMS/App",
+        "githubAppReleases": "https://github.com/AssistantNMS/App/releases",
+        "githubVersions": "https://github.com/AssistantNMS/Versions"
+    },
+    "members": {
+        "kurt": {
+            "name": "Kurt Lourens",
+            "email": "mailto:hi@kurtlourens.com",
+            "website": "https://kurtlourens.com",
+            "image": "https://kurtlourens.com/assets/images/KurtAvatar.svg",
+            "jobTitle": "Senior Software Engineer",
+            "additionalName": "KhaozTopsy",
+            "twitter": "@KhaozTopsy"
+        }
+    },
+    "navigation": {
+        "privacyPolicy": "/privacy_policy.html",
+        "termsAndConditions": "/terms_and_conditions.html"
+    },
+    "images": {
+        "maskIcon": "/safari-pinned-tab.svg",
+        "favicon": {
+            "ico": "assets/favicon/favicon.ico",
+            "x16": "assets/favicon/favicon-16x16.png",
+            "x32": "assets/favicon/favicon-32x32.png",
+            "x96": "assets/favicon/favicon-96x96.png",
+            "x196": "assets/favicon/favicon-196x196.png"
+        },
+        "apple": {
+            "x76": "assets/favicon/apple-icon-76x76.png",
+            "x114": "assets/favicon/apple-icon-114x114.png",
+            "x120": "assets/favicon/apple-icon-120x120.png",
+            "x144": "assets/favicon/apple-icon-144x144.png",
+            "x152": "assets/favicon/apple-icon-152x152.png"
+        },
+        "manifest": [
+            {
+                "size": "256x256",
+                "path": "assets/favicon/android-icon-256x256.png"
+            },
+            {
+                "size": "192x192",
+                "path": "assets/favicon/android-icon-192x192.png"
+            },
+            {
+                "size": "144x144",
+                "path": "assets/favicon/apple-icon-144x144.png"
+            },
+            {
+                "size": "96x96",
+                "path": "assets/favicon/favicon-96x96.png"
+            },
+            {
+                "size": "76x76",
+                "path": "assets/favicon/apple-icon-76x76.png"
+            }
+        ],
+        "twitter": "https://nmscd.com/assets/img/twitterCard.png",
+        "facebook": "https://nmscd.com/assets/img/twitterCard.png"
+    },
+    "redirects": [
+        {
+            "pattern": "github",
+            "url": "https://github.com/NMSCD"
+        }
+    ]
+}

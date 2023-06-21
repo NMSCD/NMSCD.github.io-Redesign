@@ -1,0 +1,176 @@
+{
+  "projects": [
+    {
+      "title": "Community Mission Progress Viewer",
+      "description": "This project/website allows you to look through the Community Mission Progress over time. In order to gather more data on this, we started recording the progress of the Community Missions.",
+      "imageUrl": "/assets/img/communityMissionProgressViewer.png",
+      "links": [
+        {
+          "title": "View project website",
+          "url": "https://community-mission.nmscd.com/"
+        },
+        {
+          "title": "View repository",
+          "url": "https://github.com/NMSCD/CommunityMission-Progress-Viewer"
+        }
+      ]
+    },
+    {
+      "title": "NMS Game Updates",
+      "description": "This project aims to show the latest update available for No Man's Sky per platform.",
+      "imageUrl": "/assets/img/update.png",
+      "links": [
+        {
+          "title": "View project website",
+          "url": "https://update.nmscd.com/"
+        },
+        {
+          "title": "View repository",
+          "url": "https://github.com/NMSCD/GameUpdates"
+        }
+      ]
+    },
+    {
+      "title": "NMS Archive",
+      "description": "A repository to archive mbin/exml files of different nms versions to give easy access to modders.",
+      "imageUrl": "/assets/img/unknown.png",
+      "links": [
+        {
+          "title": "View repository",
+          "url": "https://github.com/NMSCD/nms-archive"
+        }
+      ]
+    },
+    {
+      "title": "NMS Coordinate Converter",
+      "description": "A repository to archive mbin/exml files of different nms versions to give easy access to modders.",
+      "imageUrl": "/assets/img/unknown.png",
+      "links": [
+        {
+          "title": "View project website",
+          "url": "http://nmscd.com/Coordinate-Converter/"
+        },
+        {
+          "title": "View repository",
+          "url": "https://github.com/NMSCD/Coordinate-Converter"
+        }
+      ]
+    },
+    {
+      "title": "NMS Community Search",
+      "description": "This project aims to be the \"Yellow pages\" of the NMS community. Our goal is to document the different Communities, tools, resources, builders and creators.",
+      "imageUrl": "/assets/img/search.png",
+      "links": [
+        {
+          "title": "View project website",
+          "url": "https://community.nmscd.com/"
+        },
+        {
+          "title": "View repository",
+          "url": "https://github.com/NMSCD/Community-Search"
+        }
+      ]
+    },
+    {
+      "title": "Atlas Pass",
+      "description": "Create your own Atlas Pass quickly and easily using this NMSCD tool! Easily upload custom backgrounds and images, style text, snap elements to the grid, manage layers and so much more!",
+      "imageUrl": "/assets/img/atlasPass.png",
+      "links": [
+        {
+          "title": "View project website",
+          "url": "https://atlaspass.nmscd.com/"
+        },
+        {
+          "title": "View repository",
+          "url": "https://github.com/NMSCD/AtlasPass"
+        }
+      ]
+    },
+    {
+      "title": "NMS - Expedition Alphabet",
+      "description": "A secret No Man's Sky alphabet was teased with the Expedition releases. Once the Beachhead Expedition was released we were able to get most of the letters of the alphabet. This project displays all of the characters that we are pretty sure link up to the English Alphabet.",
+      "imageUrl": "/assets/img/metaSquare.png",
+      "links": [
+        {
+          "title": "View project website",
+          "url": "https://alphabet.nmscd.com/"
+        },
+        {
+          "title": "View repository",
+          "url": "https://github.com/NMSCD/expedition-alphabet"
+        }
+      ]
+    },
+    {
+      "title": "No Man's Guide",
+      "description": "A second-screen companion app for the game \"No Man's Sky.\" A convenient way to see location, crafting, and cooking data for over one hundred in-game items (and growing). Future updates tentatively include translations for the various alien languages.",
+      "imageUrl": "/assets/img/nomansguide.png",
+      "links": [
+        {
+          "title": "View project website",
+          "url": "https://nomansguide.dev/"
+        },
+        {
+          "title": "View repository",
+          "url": "https://github.com/ben-miles/nomansguide"
+        }
+      ]
+    },
+    {
+      "title": "No Man's Sky - Crafting Map",
+      "description": "No Man's Sky crafting & refining walk through interactive graph",
+      "imageUrl": "/assets/img/craftingMap.png",
+      "links": [
+        {
+          "title": "View project website",
+          "url": "https://nmscd.com/crafting-map/"
+        },
+        {
+          "title": "View repository",
+          "url": "https://github.com/NMSCD/crafting-map"
+        }
+      ]
+    },
+    {
+      "title": "NMS Color Parser",
+      "description": "This mini app reads the exml files and shows the colors of each property visually. The number represents the index of that color in their parent property.",
+      "imageUrl": "/assets/img/nmscolorparser.png",
+      "links": [
+        {
+          "title": "View project website",
+          "url": "https://www.nmscd.com/nmscolorparser/"
+        },
+        {
+          "title": "View repository",
+          "url": "https://github.com/NMSCD/nmscolorparser"
+        }
+      ]
+    },
+    {
+      "title": "No Man's Sky - Universal Font",
+      "description": "As far as we have observed, there have been two fonts that carry the iconic NMS typographic style: the \"NMSGeoSansLight\" webfont in use on the official NMS site, and an alternative version datamined from the game files that seems to be based on the Futura Pro font family. This project aims to bring to creators the fixed versions of the fonts.",
+      "imageUrl": "/assets/img/fonts.png",
+      "links": [
+        {
+          "title": "View project website",
+          "url": "https://font.nmscd.com/"
+        },
+        {
+          "title": "View repository",
+          "url": "https://github.com/NMSCD/No-Mans-Sky-Universal-Font"
+        }
+      ]
+    },
+    {
+      "title": "No Man's Sky - Enhanced Images",
+      "description": "The game files contain images that have mostly a 256px resolution, there are a few that are only 128px. <a href=\"https://github.com/YakuzaSuske\" target=\"_blank\" rel=\"noopener noreferrer\">YakuzaSuske</a> went through all of the images and enhanced them to 1024px and made the optimised images available to everyone.",
+      "imageUrl": "https://raw.githubusercontent.com/NMSCD/No-Mans-Sky-Enhanced-Images/master/AssistantNMS/rawMaterials/56.png",
+      "links": [
+        {
+          "title": "View the project",
+          "url": "https://github.com/NMSCD/No-Mans-Sky-Enhanced-Images"
+        }
+      ]
+    }
+  ]
+}
