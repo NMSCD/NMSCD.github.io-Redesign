@@ -26,10 +26,10 @@ jobs:
 
       - name: Setup Secrets
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ENV_GITHUB_TOKEN: ${{ secrets.ENV_GITHUB_TOKEN }}
         run: |
           touch .env
-          echo GITHUB_TOKEN="$GITHUB_TOKEN" >> .env
+          echo ENV_GITHUB_TOKEN="$ENV_GITHUB_TOKEN" >> .env
 
       - name: Build HTML
         run: |

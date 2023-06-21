@@ -3,9 +3,9 @@ const fs = require('fs');
 async function generateLiveJson() {
 
     let headers = new Headers({});
-    if (process?.env?.GITHUB_TOKEN != null) {
+    if (process?.env?.ENV_GITHUB_TOKEN != null) {
         headers = new Headers({
-            "Authorization": `Bearer ${process.env.GITHUB_TOKEN}`,
+            "Authorization": `Bearer ${process.env.ENV_GITHUB_TOKEN}`,
         });
     }
 
