@@ -30,6 +30,13 @@ section {
             font-size: 1.2rem;
         }
     }
+
+    &.not-found {
+        img {
+            border-radius: 3em;
+            max-width: 15em;
+        }
+    }
 }
 
 section.who-are-we {
@@ -55,6 +62,11 @@ section.who-are-we {
 
 footer {
     background-color: #1e2a33;
+
+    &.invert {
+        background-color: rgba(56, 64, 75, 0.4);
+        padding-top: 2em;
+    }
 
     .heading {
         text-align: left;

@@ -35,6 +35,10 @@ section a[role=button]:hover {
 section a[role=button].cta {
   font-size: 1.2rem;
 }
+section.not-found img {
+  border-radius: 3em;
+  max-width: 15em;
+}
 
 section.who-are-we {
   padding-top: 3em;
@@ -56,6 +60,10 @@ section.who-are-we img:hover {
 
 footer {
   background-color: #1e2a33;
+}
+footer.invert {
+  background-color: rgba(56, 64, 75, 0.4);
+  padding-top: 2em;
 }
 footer .heading {
   text-align: left;

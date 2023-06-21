@@ -1,6 +1,6 @@
 {
   "name": "nmscd.web",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "build": "npm-run-all --sequential live:* data:* sass:* template:*",
     "dev": "concurrently \"npm:dev:*\"",
