@@ -36,6 +36,14 @@ jobs:
           npm ci
           npm run build
 
+      - name: Download CSS Files
+        run: |
+          cd public/assets/css
+          curl https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css > pico.css
+          curl https://simplegrid.io/simple-grid.zip > simple-grid.zip
+          unzip -p simple-grid.zip grid/simple-grid.min.css > simple-grid.css
+          rm simple-grid.zip
+
       - name: Add .nojekyll
         run: |
           cd public
