@@ -16,3 +16,5 @@ node_modules
 /public/terms_and_conditions.html
 /template/data/allData.json
 /template/data/live.json
+/public/assets/css/pico.css
+/public/assets/css/simple-grid.css
