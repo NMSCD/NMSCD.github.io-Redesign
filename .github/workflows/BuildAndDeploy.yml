@@ -36,6 +36,10 @@ jobs:
           npm ci
           npm run build
 
+      - name: Edit .gitignore
+        run: |
+          echo "/github-pages-deploy-action-temp-deployment-folder" > ./public/.gitignore
+
       - name: Minify Code
         uses: Lenni009/minify-js@main
         with:
