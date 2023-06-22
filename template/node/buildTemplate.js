@@ -3,6 +3,8 @@ const util = require('util');
 const Handlebars = require('handlebars');
 const readFile = util.promisify(fs.readFile);
 
+const publicFolderPath = './public'
+
 async function buildTemplates() {
     process.env['NODE_ENV'] = require('../../package.json').version;
     Handlebars.registerHelper('date', require('../handlebar/helpers/date.helper.js'));
@@ -19,8 +21,27 @@ async function buildTemplates() {
     Handlebars.registerPartial('components/footer', require('../handlebar/components/footer.hbs'));
     Handlebars.registerPartial('components/scripts', require('../handlebar/components/scripts.hbs'));
 
-    const projectDataContents = await readFile('./template/data/allData.json', 'utf8');
-    const projectData = JSON.parse(projectDataContents);
+    const siteDataContents = await readFile('./template/data/site.json', 'utf8');
+    const liveDataContents = await readFile('./template/data/live.json', 'utf8');
+    const projectsContents = await readFile('./template/data/projects.json', 'utf8');
+
+    const siteData = JSON.parse(siteDataContents);
+    const liveData = JSON.parse(liveDataContents);
+    const projects = JSON.parse(projectsContents);
+
+    const humansArray = [];
+    for (const humanKey in siteData.humans) {
+        if (Object.hasOwnProperty.call(siteData.humans, humanKey)) {
+            humansArray.push(siteData.humans[humanKey]);
+        }
+    }
+
+    const projectData = {
+        ...siteData,
+        ...liveData,
+        ...projects,
+        humansArr: humansArray
+    };
 
     const files = [
         { src: 'index.html.hbs', dest: 'index.html' },
@@ -31,11 +52,13 @@ async function buildTemplates() {
         { src: 'htaccess.hbs', dest: '.htaccess' },
         { src: 'humans.txt.hbs', dest: 'humans.txt' },
         { src: 'opensearch.xml.hbs', dest: 'opensearch.xml' },
-        { src: 'manifest.json.hbs', dest: 'manifest.json' },
+        { src: 'site.webmanifest.hbs', dest: 'manifest.json' },
         { src: 'site.webmanifest.hbs', dest: 'site.webmanifest' },
         { src: 'sitemap.xml.hbs', dest: 'sitemap.xml' },
         { src: 'serviceWorker.js.hbs', dest: 'serviceWorker.js' },
     ];
+
+    const generatedGitIgnoreFiles = [];
 
     for (const fileObj of files) {
         const template = await readFile(`./template/handlebar/${fileObj.src}`, 'utf8');
@@ -45,12 +68,14 @@ async function buildTemplates() {
             allItems: []
         };
         const compiledTemplate = templateFunc(templateData);
-        fs.writeFile(`./public/${fileObj.dest}`, compiledTemplate, ['utf8'], () => { });
+        const destFile = `${publicFolderPath}/${fileObj.dest}`;
+        generatedGitIgnoreFiles.push(fileObj.dest);
+        fs.writeFile(destFile, compiledTemplate, ['utf8'], () => { });
     }
 
     for (const redirect of projectData.redirects) {
-        if (!fs.existsSync(`./public/${redirect.pattern}`)) {
-            fs.mkdirSync(`./public/${redirect.pattern}`);
+        if (!fs.existsSync(`${publicFolderPath}/${redirect.pattern}`)) {
+            fs.mkdirSync(`${publicFolderPath}/${redirect.pattern}`);
         }
 
         const template = await readFile('./template/handlebar/redirect.hbs', 'utf8');
@@ -61,8 +86,12 @@ async function buildTemplates() {
         };
 
         const compiledTemplate = templateFunc(templateData);
-        fs.writeFile(`./public/${redirect.pattern}/index.html`, compiledTemplate, ['utf8'], () => { });
+        const destFile = `${publicFolderPath}/${redirect.pattern}/index.html`;
+        generatedGitIgnoreFiles.push(`${redirect.pattern}/index.html`);
+        fs.writeFile(destFile, compiledTemplate, ['utf8'], () => { });
     }
+
+    fs.writeFile(`${publicFolderPath}/.gitignore`, generatedGitIgnoreFiles.join('\n'), ['utf8'], () => { });
 }
 
 buildTemplates()

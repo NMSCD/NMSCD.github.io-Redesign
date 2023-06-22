@@ -1,2 +1,5 @@
 node_modules
 /.env
+/public/assets/css/main.css
+/public/assets/css/main.css.map
+/template/data/live.json

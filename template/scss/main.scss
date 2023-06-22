@@ -1,18 +1,7 @@
-@font-face {
-    font-family: "NMSFuturaProBook";
-    src: url("https://font.nmscd.com/assets/font/NMSFuturaProBook_Kerned/Web-TT/NMSFuturaProBook_Kerned.eot");
-    src: url("https://font.nmscd.com/assets/font/NMSFuturaProBook_Kerned/Web-TT/NMSFuturaProBook_Kerned.eot?#iefix")
-            format("embedded-opentype"),
-        url("https://font.nmscd.com/assets/font/NMSFuturaProBook_Kerned/Web-TT/NMSFuturaProBook_Kerned.woff")
-            format("woff"),
-        url("https://font.nmscd.com/assets/font/NMSFuturaProBook_Kerned/Web-TT/NMSFuturaProBook_Kerned.ttf")
-            format("truetype");
-}
-
-/* Make everything use the NMSFuturaProBook font */
-* {
-    font-family: "NMSFuturaProBook";
-}
+// Third party
+@import "nmscdFont";
+@import "simple-grid";
+@import "pico";
 
 @import "var";
 @import "page";
