@@ -40,7 +40,7 @@ async function buildTemplates() {
         ...siteData,
         ...liveData,
         ...projects,
-        humansArr: humansArray
+        humansArray: humansArray
     };
 
     const files = [
