@@ -19,8 +19,27 @@ async function buildTemplates() {
     Handlebars.registerPartial('components/footer', require('../handlebar/components/footer.hbs'));
     Handlebars.registerPartial('components/scripts', require('../handlebar/components/scripts.hbs'));
 
-    const projectDataContents = await readFile('./template/data/allData.json', 'utf8');
-    const projectData = JSON.parse(projectDataContents);
+    const siteDataContents = await readFile('./template/data/site.json', 'utf8');
+    const liveDataContents = await readFile('./template/data/live.json', 'utf8');
+    const projectsContents = await readFile('./template/data/projects.json', 'utf8');
+
+    const siteData = JSON.parse(siteDataContents);
+    const liveData = JSON.parse(liveDataContents);
+    const projects = JSON.parse(projectsContents);
+
+    const humansArray = [];
+    for (const humanKey in siteData.humans) {
+        if (Object.hasOwnProperty.call(siteData.humans, humanKey)) {
+            humansArray.push(siteData.humans[humanKey]);
+        }
+    }
+
+    const projectData = {
+        ...siteData,
+        ...liveData,
+        ...projects,
+        humansArr: humansArray
+    };
 
     const files = [
         { src: 'index.html.hbs', dest: 'index.html' },

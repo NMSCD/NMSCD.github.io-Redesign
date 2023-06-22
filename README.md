@@ -13,6 +13,8 @@ The home page of the No Man's Sky Community Developers & Designers.
 Many of the files are generated using Handlebar templates. To get the solution running, use the following commands:
 
 - `npm i`
+- `npm run setup`
+  - This will create and fill the **templates/data/live.json** file
 - `npm run dev`
 
 The dev script runs 3 processes concurrently. This shouldn't be a problem, but if you want to run them individually, they are:

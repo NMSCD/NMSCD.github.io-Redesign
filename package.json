@@ -2,13 +2,13 @@
   "name": "nmscd.web",
   "version": "1.0.1",
   "scripts": {
-    "build": "npm-run-all --sequential live:* data:* sass:* template:*",
+    "build": "npm-run-all --sequential live:* sass:* template:*",
+    "setup": "npm-run-all --sequential live:*",
     "dev": "concurrently \"npm:dev:*\"",
     "dev:watch-template": "nodemon -e hbs -x \"npm-run-all template:*\"",
     "dev:watch-sass": "nodemon -e scss -x \"npm-run-all sass:*\"",
     "dev:live-server": "alive-server --mount=/:./public --watch=./public",
     "live:main": "node template/node/generateLiveJson.js",
-    "data:main": "node template/node/getGeneratedProjectJson.js",
     "template:main": "node template/node/buildTemplate.js",
     "sass:main": "sass template/scss/main.scss ./public/assets/css/main.css"
   },

@@ -1,9 +1,11 @@
 /* TEAM */
-Software Engineer: {{members.kurt.name}}
-Contact: hi [at] kurtlourens.com
-Twitter: {{members.kurt.twitter}}
-From: {{members.kurt.location}}
+{{#each humansArray}}
+{{jobTitle}}: {{name}}
+Contact: {{contact}}
+Twitter: {{twitter}}
+From: {{location}}
 
+{{/each}}
 /* SITE */
 Last update: {{date}}
 Language: English

@@ -31,14 +31,16 @@
         "githubAppReleases": "https://github.com/AssistantNMS/App/releases",
         "githubVersions": "https://github.com/AssistantNMS/Versions"
     },
-    "members": {
+    "humans": {
         "kurt": {
             "name": "Kurt Lourens",
             "email": "mailto:hi@kurtlourens.com",
             "website": "https://kurtlourens.com",
             "image": "https://kurtlourens.com/assets/images/KurtAvatar.svg",
+            "contact": "hi [at] kurtlourens.com",
             "jobTitle": "Senior Software Engineer",
             "additionalName": "KhaozTopsy",
+            "location": "the Netherlands",
             "twitter": "@KhaozTopsy"
         }
     },
