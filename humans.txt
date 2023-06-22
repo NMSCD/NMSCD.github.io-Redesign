@@ -1,0 +1,6 @@
+/* TEAM */
+/* SITE */
+Last update: 2023-06-22
+Language: English
+Doctype:HTML5
+IDE: Visual Studio Code

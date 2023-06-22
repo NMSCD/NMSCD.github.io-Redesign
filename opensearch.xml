@@ -1,0 +1,11 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+  xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>NMSCD - No Man&#x27;s Sky Community Developers &amp; Designers</ShortName>
+  <Description>A lot of the tools that exist for No Man&#x27;s Sky are isolated. The creators have done amazing jobs working on their projects. But we could do so much more together!</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">https://nmscd.com//favicon.ico</Image>
+  <Url type="text/html" template="https://nmscd.com/?q={searchTerms}">
+    <Param name="searchTerms" value="{searchTerms}" />
+  </Url>
+  <Url type="application/x-suggestions+json" template="https://nmscd.com/?q={searchTerms}" />
+</OpenSearchDescription>
