@@ -36,8 +36,12 @@ jobs:
           npm ci
           npm run build
 
+      - name: Add .nojekyll File
+        run: |
+          cd public
+          touch .nojekyll
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.3.4
         with:
           folder: public # The folder the action should deploy.
-
