@@ -31,11 +31,6 @@ jobs:
           touch .env
           echo ENV_GITHUB_TOKEN="$ENV_GITHUB_TOKEN" >> .env
 
-      - name: Build HTML
-        run: |
-          npm ci
-          npm run build
-
       - name: Download CSS Files
         run: |
           cd public/assets/css
@@ -43,6 +38,11 @@ jobs:
           curl https://simplegrid.io/simple-grid.zip > simple-grid.zip
           unzip -p simple-grid.zip grid/simple-grid.min.css > simple-grid.css
           rm simple-grid.zip
+
+      - name: Build HTML
+        run: |
+          npm ci
+          npm run build
 
       - name: Add .nojekyll
         run: |
