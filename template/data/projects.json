@@ -42,6 +42,103 @@
       ]
     },
     {
+      "title": "DE-EN-lang-Archive",
+      "description": "A repository to archive mbin/exml language files of different nms versions.",
+      "imageUrl": "/assets/img/unknown.png",
+      "links": [
+        {
+          "title": "View repository",
+          "url": "https://github.com/NMSCD/de-en-lang-archive"
+        }
+      ]
+    },
+    {
+      "title": "DDS-Archive",
+      "description": "A repository to archive DDS texture files of different nms versions.",
+      "imageUrl": "/assets/img/unknown.png",
+      "links": [
+        {
+          "title": "View repository",
+          "url": "https://github.com/NMSCD/nms-dds"
+        }
+      ]
+    },
+    {
+      "title": "RewardTableTools",
+      "description": "Filter the REWARDTABLE by reward or by item and get chances for each reward item.",
+      "imageUrl": "/assets/img/unknown.png",
+      "links": [
+        {
+          "title": "View project website",
+          "url": "http://nmscd.com/RewardTableTools/"
+        },
+        {
+          "title": "View repository",
+          "url": "https://github.com/NMSCD/RewardTableTools"
+        }
+      ]
+    },
+    {
+      "title": "Base-Relocator",
+      "description": "Move or copy your base to another location in the NMS universe.",
+      "imageUrl": "/assets/img/unknown.png",
+      "links": [
+        {
+          "title": "View project website",
+          "url": "http://nmscd.com/Base-Relocator/"
+        },
+        {
+          "title": "View repository",
+          "url": "https://github.com/NMSCD/Base-Relocator"
+        }
+      ]
+    },
+    {
+      "title": "BaseReorder",
+      "description": "Reorder the bases shown in the teleporter menu.",
+      "imageUrl": "/assets/img/unknown.png",
+      "links": [
+        {
+          "title": "View project website",
+          "url": "http://nmscd.com/BaseReorder/"
+        },
+        {
+          "title": "View repository",
+          "url": "https://github.com/NMSCD/BaseReorder"
+        }
+      ]
+    },
+    {
+      "title": "NMSUIPreview",
+      "description": "Load UI files and see what they look like in game.",
+      "imageUrl": "/assets/img/unknown.png",
+      "links": [
+        {
+          "title": "View project website",
+          "url": "http://nmscd.com/NMSUIPreview/"
+        },
+        {
+          "title": "View repository",
+          "url": "https://github.com/NMSCD/NMSUIPreview"
+        }
+      ]
+    },
+    {
+      "title": "LangFileGenerator",
+      "description": "Convert EXML language files into more readable textfiles.",
+      "imageUrl": "/assets/img/unknown.png",
+      "links": [
+        {
+          "title": "Download",
+          "url": "https://github.com/NMSCD/LangFileGenerator/releases"
+        },
+        {
+          "title": "View repository",
+          "url": "https://github.com/NMSCD/LangFileGenerator"
+        }
+      ]
+    },
+    {
       "title": "NMS Coordinate Converter",
       "description": "A repository to archive mbin/exml files of different nms versions to give easy access to modders.",
       "imageUrl": "/assets/img/unknown.png",
