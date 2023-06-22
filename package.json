@@ -3,8 +3,7 @@
   "version": "1.0.3",
   "scripts": {
     "build": "npm-run-all --sequential live:* sass:* template:*",
-    "setup": "npm i && npm run setup:live-template",
-    "setup:live-template": "npm-run-all --sequential live:*",
+    "setup": "npm i && npm-run-all --sequential live:*",
     "dev": "concurrently \"npm:dev:*\"",
     "dev:watch-template": "nodemon -e hbs -x \"npm-run-all template:*\"",
     "dev:watch-sass": "nodemon -e scss -x \"npm-run-all sass:*\"",
