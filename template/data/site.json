@@ -14,8 +14,7 @@
         "termsAndConditions": "/terms_and_conditions.html"
     },
     "preconnectLinks": [
-        "https://fonts.nmscd.com",
-        "https://cdnjs.cloudflare.com"
+        "https://fonts.nmscd.com"
     ],
     "twitter": {
         "handle": "@AssistantNMS",
@@ -41,7 +40,16 @@
             "jobTitle": "Senior Software Engineer",
             "additionalName": "KhaozTopsy",
             "location": "the Netherlands",
-            "twitter": "@KhaozTopsy"
+            "twitter": "@KhaozTopsy",
+            "discord": "@KhaozTopsy"
+        },
+        "lenni": {
+            "name": "Lenni",
+            "website": "https://lenni009.github.io",
+            "image": "https://lenni009.github.io/HubWikiPageCreator/assets/images/jpg/misc/lenni.jpg",
+            "additionalName": "Lenni009",
+            "location": "Germany",
+            "discord": "@lenni009"
         }
     },
     "navigation": {
