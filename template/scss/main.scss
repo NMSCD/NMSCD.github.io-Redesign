@@ -1,15 +1,15 @@
 // Third party
-@import "nmscdFont";
-@import "simple-grid";
-@import "pico";
+@use "third-party/nmscdFont";
+@use "third-party/simple-grid";
+@use "third-party/pico";
 
-@import "var";
-@import "page";
-@import "navbar";
-@import "banner";
-@import "members";
-@import "projects";
-@import "scrollbar";
+@use "var";
+@use "page";
+@use "navbar";
+@use "banner";
+@use "members";
+@use "projects";
+@use "scrollbar";
 
 * {
     box-sizing: border-box;
@@ -22,8 +22,8 @@
 
 #app-body {
     // Pico css vars
-    --primary: #{$primaryColour};
-    --primary-hover: #{lighten($primaryColour, 10%)};
+    --primary: #{var.$primaryColour};
+    --primary-hover: #{lighten(var.$primaryColour, 10%)};
     --primary-focus: rgba(229, 30, 30, 0.25);
     --primary-inverse: #fff;
 
@@ -32,7 +32,7 @@
 
 body {
     color: #fff;
-    background-color: $bodyColour;
+    background-color: var.$bodyColour;
 }
 
 .mt-8 {
@@ -51,7 +51,7 @@ body {
 }
 
 .primary {
-    color: $primaryColour;
+    color: var.$primaryColour;
 }
 
 .noselect,
