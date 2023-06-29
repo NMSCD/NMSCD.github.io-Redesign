@@ -33,7 +33,7 @@
     {
       "title": "NMS Archive",
       "description": "A repository to archive mbin/exml files of different nms versions to give easy access to modders.",
-      "imageUrl": "/assets/img/unknown.png",
+      "imageUrl": "/assets/img/archive.png",
       "links": [
         {
           "title": "View repository",
@@ -44,7 +44,7 @@
     {
       "title": "DE-EN-lang-Archive",
       "description": "A repository to archive mbin/exml language files of different nms versions.",
-      "imageUrl": "/assets/img/unknown.png",
+      "imageUrl": "/assets/img/lang.png",
       "links": [
         {
           "title": "View repository",
@@ -55,7 +55,7 @@
     {
       "title": "DDS-Archive",
       "description": "A repository to archive DDS texture files of different nms versions.",
-      "imageUrl": "/assets/img/unknown.png",
+      "imageUrl": "/assets/img/dds.png",
       "links": [
         {
           "title": "View repository",
@@ -66,7 +66,7 @@
     {
       "title": "RewardTableTools",
       "description": "Filter the REWARDTABLE by reward or by item and get chances for each reward item.",
-      "imageUrl": "/assets/img/unknown.png",
+      "imageUrl": "/assets/img/table.png",
       "links": [
         {
           "title": "View project website",
@@ -81,7 +81,7 @@
     {
       "title": "Base-Relocator",
       "description": "Move or copy your base to another location in the NMS universe.",
-      "imageUrl": "/assets/img/unknown.png",
+      "imageUrl": "/assets/img/relocator.png",
       "links": [
         {
           "title": "View project website",
@@ -96,7 +96,7 @@
     {
       "title": "BaseReorder",
       "description": "Reorder the bases shown in the teleporter menu.",
-      "imageUrl": "/assets/img/unknown.png",
+      "imageUrl": "/assets/img/relocator.png",
       "links": [
         {
           "title": "View project website",
@@ -111,7 +111,7 @@
     {
       "title": "NMSUIPreview",
       "description": "Load UI files and see what they look like in game.",
-      "imageUrl": "/assets/img/unknown.png",
+      "imageUrl": "/assets/img/uiPreview.png",
       "links": [
         {
           "title": "View project website",
@@ -126,7 +126,7 @@
     {
       "title": "LangFileGenerator",
       "description": "Convert EXML language files into more readable textfiles.",
-      "imageUrl": "/assets/img/unknown.png",
+      "imageUrl": "/assets/img/lang.png",
       "links": [
         {
           "title": "Download",
@@ -141,7 +141,7 @@
     {
       "title": "NMS Coordinate Converter",
       "description": "A repository to archive mbin/exml files of different nms versions to give easy access to modders.",
-      "imageUrl": "/assets/img/unknown.png",
+      "imageUrl": "/assets/img/calc.png",
       "links": [
         {
           "title": "View project website",
