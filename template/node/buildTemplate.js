@@ -51,6 +51,7 @@ async function buildTemplates() {
 
         { src: 'htaccess.hbs', dest: '.htaccess' },
         { src: 'humans.txt.hbs', dest: 'humans.txt' },
+        { src: 'robots.txt.hbs', dest: 'robots.txt' },
         { src: 'opensearch.xml.hbs', dest: 'opensearch.xml' },
         { src: 'site.webmanifest.hbs', dest: 'manifest.json' },
         { src: 'site.webmanifest.hbs', dest: 'site.webmanifest' },

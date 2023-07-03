@@ -61,6 +61,10 @@ img {
     user-select: none;
 }
 
+.hidden {
+    display: none;
+}
+
 .hidden-in-desktop {
     @media screen and (min-width: 1000px) {
         display: none;
