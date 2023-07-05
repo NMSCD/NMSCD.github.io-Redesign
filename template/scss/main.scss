@@ -51,7 +51,7 @@ body {
 }
 
 .primary {
-    color: var.$primaryColour;
+    color: var(--primary);
 }
 
 .noselect,
