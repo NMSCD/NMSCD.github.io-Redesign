@@ -29,7 +29,7 @@ async function generateLiveJson() {
     const nmscdMembersJson = [];
     const nmscdMembersImgTasks = [];
     for (const nmscdMember of nmscdMembersWithoutNamesJson) {
-        const nmscdMemberResponse = await fetch(nmscdMember.detailsUrl);
+        const nmscdMemberResponse = await fetch(nmscdMember.detailsUrl, { method: 'GET', headers: headers });
         const nmscdMemberJson = await nmscdMemberResponse.json();
         const memberImg = `/assets/img/members/${nmscdMember.id}.png`;
         nmscdMembersJson.push({
