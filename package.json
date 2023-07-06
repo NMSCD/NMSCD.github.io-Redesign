@@ -1,6 +1,6 @@
 {
   "name": "nmscd.web",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "scripts": {
     "build": "npm-run-all --sequential setup:* live:* sass:* template:*",
     "setup": "npm i && npm-run-all --sequential setup:* live:*",
@@ -25,6 +25,7 @@
   "license": "ISC",
   "devDependencies": {
     "alive-server": "^1.3.0",
+    "canvas": "^2.11.2",
     "concurrently": "^8.2.0",
     "dotenv": "^16.2.0",
     "handlebars": "^4.7.7",

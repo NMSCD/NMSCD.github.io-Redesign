@@ -51,7 +51,7 @@ body {
 }
 
 .primary {
-    color: var.$primaryColour;
+    color: var(--primary);
 }
 
 .noselect,
@@ -59,6 +59,10 @@ img {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     user-select: none;
+}
+
+.hidden {
+    display: none;
 }
 
 .hidden-in-desktop {
